@@ -1,3 +1,4 @@
+=begin
 module Jekyll
   class MongoSnippet < Page
 
@@ -7,3 +8,4 @@ module Jekyll
     
   end
 end
+=end

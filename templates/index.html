@@ -6,10 +6,12 @@
 
 <div class="span2">
   <ul class="nav nav-list well">
-    <li class="nav-header">Connections</li>
-    <li class="nav-header">Queries</li>
-    <li class="nav-header">Updates</li>
-    <li class="nav-header">Commands</li>
+    {% for category in structure %}
+      <li class="nav-header">{{ category }}</li>  
+      {% for snippet in structure[category] %}
+        <li><a href="#">{{ snippet }}</a></li>
+      {% endfor %}  
+    {% endfor %}
   </ul>
 </div>
 <div class="span9">
